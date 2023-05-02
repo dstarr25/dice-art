@@ -55,6 +55,8 @@ td, tr, tbody, img {
     height: 10px;
     --dotColor: #000;
     --bgColor: #fff;
+    --dotSize: 35%;
+    --dotSize2: 35%;
 }
 
 #fileSelect {
@@ -91,48 +93,48 @@ td, tr, tbody, img {
 
 .five {
   background-color: var(--bgColor);
-  background-image: radial-gradient(var(--dotColor) 25%, transparent 25%), radial-gradient(var(--dotColor) 25%, transparent 25%);
-  background-size: 50% 50%;
-  background-position: 0 0, 50% 50%;
+  background-image: radial-gradient(var(--dotColor) var(--dotSize), transparent var(--dotSize2)), radial-gradient(var(--dotColor) var(--dotSize), transparent var(--dotSize2));
+  background-size: 60% 60%;
+  background-position: -25% -25%, 50% 50%;
   background-repeat: repeat, no-repeat;
 }
 
 .four {
   background-color: var(--bgColor);
-  background-image: radial-gradient(var(--dotColor) 25%, transparent 25%);
-  background-size: 50% 50%;
-  background-position: 0 0;
+  background-image: radial-gradient(var(--dotColor) var(--dotSize), transparent var(--dotSize2));
+  background-size: 60% 60%;
+  background-position: -25% -25%;
   background-repeat: repeat;
 }
 
 .two {
   background-color: var(--bgColor);
-  background-image: radial-gradient(var(--dotColor) 25%, transparent 25%), radial-gradient(var(--dotColor) 25%, transparent 25%);
-  background-size: 50% 50%;
-  background-position: 0 100%, 100% 0;
+  background-image: radial-gradient(var(--dotColor) var(--dotSize), transparent var(--dotSize2)), radial-gradient(var(--dotColor) var(--dotSize), transparent var(--dotSize2));
+  background-size: 60% 60%;
+  background-position: -25% 125%, 125% -25%;
   background-repeat: no-repeat, no-repeat;
 }
 
 .three {
   background-color: var(--bgColor);
-  background-image: radial-gradient(var(--dotColor) 25%, transparent 25%), radial-gradient(var(--dotColor) 25%, transparent 25%), radial-gradient(var(--dotColor) 25%, transparent 25%);
-  background-size: 50% 50%;
-  background-position: 0 100%, 100% 0, 50% 50%;
+  background-image: radial-gradient(var(--dotColor) var(--dotSize), transparent var(--dotSize2)), radial-gradient(var(--dotColor) var(--dotSize), transparent var(--dotSize2)), radial-gradient(var(--dotColor) var(--dotSize), transparent var(--dotSize2));
+  background-size: 60% 60%;
+  background-position: -25% 125%, 125% -25%, 50% 50%;
   background-repeat: no-repeat, no-repeat, no-repeat;
 }
 
 .one {
   background-color: var(--bgColor);
-  background-image: radial-gradient(var(--dotColor) 25%, transparent 25%);
-  background-size: 50% 50%;
+  background-image: radial-gradient(var(--dotColor) var(--dotSize), transparent var(--dotSize2));
+  background-size: 60% 60%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
 
 .six {
   background-color: var(--bgColor);
-  background-image: radial-gradient(var(--dotColor) 25%, transparent 25%), radial-gradient(var(--dotColor) 25%, transparent 25%);
-  background-size: 50% 50%;
-  background-position: 0 0, 0 50%;
+  background-image: radial-gradient(var(--dotColor) var(--dotSize), transparent var(--dotSize2)), radial-gradient(var(--dotColor) var(--dotSize), transparent var(--dotSize2));
+  background-size: 60% 60%;
+  background-position: -25% -25%, -25% 50%;
   background-repeat: repeat, repeat-x;
 }
