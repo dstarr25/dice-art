@@ -15,7 +15,6 @@
         "arrow-body-style": 0,
         "one-var": ["error", { "uninitialized": "always", "initialized": "never" }],
         "one-var-declaration-per-line": ["error", "initializations"],
-        "max-len": ["error", 200],
         "no-extra-parens": 0,
         "no-restricted-syntax": [0, "DebuggerStatement"],
         "no-debugger": "warn",
@@ -32,7 +31,11 @@
         "jsx-a11y/no-noninteractive-element-interactions": 0,
         "react/jsx-one-expression-per-line":0,
         "no-unused-vars": 0,
-        "react/jsx-indent": [2,4]
+        "react/jsx-indent": [2,4],
+        "no-plusplus": 0,
+        "max-len": 0,
+        "react/no-array-index-key": 0,
+        "jsx-a11y/label-has-associated-control": 0
     },
     "plugins": [
         "react"

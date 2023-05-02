@@ -1,0 +1,86 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: rebeccapurple;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.diceTable {
+    border:none;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+td, tr, tbody, img {
+    border:none;
+    padding:0;
+    margin:0;
+}
+
+.pixel {
+    width: 10px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#fileSelect {
+        font-weight: bold; 
+    font-size: min(1.8vw,1.8vh);
+    color: rgb(26, 26, 26);
+
+}
+
+.buttonContainer {
+  margin:0;
+}
+
+.buttonContainer button, label {
+    font-weight: bold; 
+    padding: min(1.4vw,1.4vh) min(2.4vw,2.4vh);
+    border: min(.3vw,.3vh) solid rgb(26, 26, 26);
+    border-radius: min(2vw,2vh);
+    margin: min(1vw,1vh);
+    font-size: min(1.8vw,1.8vh);
+    background-color: rgb(212, 212, 212);
+    color: rgb(26, 26, 26);
+}
+
+.titleText {
+    margin:0px;
+    font-size: min(5vw,5vh);
+}
+

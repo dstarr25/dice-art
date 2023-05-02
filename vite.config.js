@@ -9,7 +9,7 @@ import autoprefixer from 'autoprefixer';
 export default defineConfig({
     plugins: [
         eslint(),
-        vitePluginFaviconsInject('src/img/mm25.jpg'),
+        vitePluginFaviconsInject('src/img/dice/5.jpg'),
     ],
     css: {
         postcss: {
