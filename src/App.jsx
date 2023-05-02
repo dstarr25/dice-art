@@ -17,6 +17,15 @@ dieNumberToColor.set(4, '#575757');
 dieNumberToColor.set(5, '#2e2e2e');
 dieNumberToColor.set(6, '#0f0f0f');
 
+const numberToText = {
+    1: 'one',
+    2: 'two',
+    3: 'three',
+    4: 'four',
+    5: 'five',
+    6: 'six',
+};
+
 function App() {
     const [grid, setGrid] = useState(defaultGrid());
     const [ogGrid, setogGrid] = useState(defaultGrid());
@@ -138,7 +147,7 @@ function App() {
                                                 return (
                                                     <td key={rIndex + cIndex}>
                                                         {/* <img width={50} height={50} src={`dice/${!inverted ? gridCell : "" + (7 - gridCell) + "_inverted"}.jpg`} alt={`dice/${gridCell}.jpg`} /> */}
-                                                        <div className="pixel" style={{ backgroundImage: `url(src/img/dice/${!inverted ? Math.ceil(gridCell * 6) : `${7 - Math.ceil(gridCell * 6)}_inverted`}.jpg)` }} />
+                                                        <div className={`pixel ${numberToText[!inverted ? (Math.ceil(gridCell * 6)) : 7 - (Math.ceil(gridCell * 6))]} ${inverted ? 'inverted' : ''}`} />
                                                     </td>
                                                 );
                                             }

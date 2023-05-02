@@ -53,8 +53,8 @@ td, tr, tbody, img {
 .pixel {
     width: 10px;
     height: 10px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    --dotColor: #000;
+    --bgColor: #fff;
 }
 
 #fileSelect {
@@ -84,3 +84,55 @@ td, tr, tbody, img {
     font-size: min(5vw,5vh);
 }
 
+.pixel.inverted {
+    --dotColor: #fff;
+    --bgColor: #000;
+}
+
+.five {
+  background-color: var(--bgColor);
+  background-image: radial-gradient(var(--dotColor) 25%, transparent 25%), radial-gradient(var(--dotColor) 25%, transparent 25%);
+  background-size: 50% 50%;
+  background-position: 0 0, 50% 50%;
+  background-repeat: repeat, no-repeat;
+}
+
+.four {
+  background-color: var(--bgColor);
+  background-image: radial-gradient(var(--dotColor) 25%, transparent 25%);
+  background-size: 50% 50%;
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.two {
+  background-color: var(--bgColor);
+  background-image: radial-gradient(var(--dotColor) 25%, transparent 25%), radial-gradient(var(--dotColor) 25%, transparent 25%);
+  background-size: 50% 50%;
+  background-position: 0 100%, 100% 0;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.three {
+  background-color: var(--bgColor);
+  background-image: radial-gradient(var(--dotColor) 25%, transparent 25%), radial-gradient(var(--dotColor) 25%, transparent 25%), radial-gradient(var(--dotColor) 25%, transparent 25%);
+  background-size: 50% 50%;
+  background-position: 0 100%, 100% 0, 50% 50%;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+.one {
+  background-color: var(--bgColor);
+  background-image: radial-gradient(var(--dotColor) 25%, transparent 25%);
+  background-size: 50% 50%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.six {
+  background-color: var(--bgColor);
+  background-image: radial-gradient(var(--dotColor) 25%, transparent 25%), radial-gradient(var(--dotColor) 25%, transparent 25%);
+  background-size: 50% 50%;
+  background-position: 0 0, 0 50%;
+  background-repeat: repeat, repeat-x;
+}
